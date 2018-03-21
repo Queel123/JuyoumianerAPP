@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <!--背景-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/setting_background" />
+
+    <!--头像-->
+    <ImageView
+        android:id="@+id/headshots"
+        android:layout_width="111dp"
+        android:layout_height="111dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/setting_headshots" />
+
+    <!--用户ID-->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/headshots"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/headshots"
+        android:layout_toRightOf="@+id/headshots"
+        android:text="小特拉福德"
+        android:textColor="#000"
+        android:textSize="18sp"
+         />
+
+    <!--经验-->
+ <!--   <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="4dp"
+        android:text="经验"
+        android:textColor="#A8A8A7"
+        android:textStyle="bold" />-->
+
+    <!--进度条:记得在build.gradle里添加包-->
+  <!--  <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/number_progress_bar"
+        style="@style/NumberProgressBar_Relax_Blue"
+        android:layout_width="150dp"
+
+        android:layout_height="17dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/textView"
+
+        android:layout_toRightOf="@+id/textView"
+        custom:progress_current="70"
+
+        custom:progress_max="100" />-->
+    <!--syle
+    Default
+    Passing_Green
+    Relax_Blue
+    Grace_Yellow
+    Warning_Red
+    Funny_Orange
+    Beauty_Red
+    Twinkle_Night
+    -->
+    <!--
+    custom:progress_reached_bar_height="2.5dp"
+    custom:progress_unreached_bar_height="5dp"
+    custom:progress_reached_color="#A8A8A7"
+    custom:progress_text_color="#FFFFFF"
+    custom:progress_unreached_color="#fff"
+    custom:progress_text_offset="1dp"
+    custom:progress_text_size="13sp"
+    custom:progress_text_visibility="visible"
+    Default Passing_Green Relax_Blue Grace_Yellow Warning_Red Funny_Orange Beauty_Red Twinkle_Night
+    -->
+
+
+    <!--等级-->
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/user_name"
+        android:layout_toRightOf="@+id/user_name"
+        android:layout_toEndOf="@+id/user_name"
+        android:text="北京土著"
+        android:layout_marginTop="10dp"
+        android:textColor="#424242"
+        android:textSize="8sp" />
+    <TextView
+        android:id="@+id/signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toRightOf="@+id/headshots"
+        android:layout_alignTop="@+id/headshots"
+        android:layout_marginTop="95dp"
+        android:text="个性签名：我不吃烤鱼"
+        android:textColor="#000"
+        android:textSize="10sp" />
+
+    <!--滚动效果-->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headshots"
+        android:layout_marginTop="17dp"
+        android:background="#EDEDED"
+        android:overScrollMode="ifContentScrolls">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--设置栏目-聚会日记-->
+            <com.leon.lib.settingview.LSettingItem
+                android:id="@+id/item_footmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                leon:leftIcon="@drawable/setting_footmark"
+                leon:leftText="聚会日记" />
+
+            <!--设置栏目-心愿单-->
+            <com.leon.lib.settingview.LSettingItem
+                android:id="@+id/item_join_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/item_footmark"
+                leon:leftIcon="@drawable/setting_join"
+                leon:leftText="心愿单" />
+
+            <!--设置栏目-收藏夹-->
+            <com.leon.lib.settingview.LSettingItem
+                android:id="@+id/item_new_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/item_join_in"
+                leon:leftIcon="@drawable/setting_message"
+                leon:leftText="收藏夹"
+                leon:rightStyle="iconShow" />
+
+            <!--设置栏目-新消息提醒-->
+            <com.leon.lib.settingview.LSettingItem
+                android:id="@+id/item_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/item_new_message"
+                leon:leftIcon="@drawable/setting_reminder"
+                leon:leftText="新消息提醒"
+                leon:rightStyle="iconShow" />
+
+            <!--设置栏目-允许获得位置信息-->
+        <!--    <com.leon.lib.settingview.LSettingItem
+                android:id="@+id/item_get_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/item_reminder"
+                leon:isShowUnderLine="false"
+                leon:leftIcon="@drawable/setting_location"
+                leon:leftText="允许获得位置信息"
+                leon:rightStyle="iconSwitch" />-->
+
+            <!--设置栏目-问题反馈-->
+            <com.leon.lib.settingview.LSettingItem
+                android:id="@+id/item_problem_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/item_reminder"
+                android:layout_marginTop="2dp"
+                leon:leftText="问题反馈：hsuanr@qq.com"
+                leon:leftTextMarginLeft="40dp"
+                leon:rightStyle="iconHide">
+
+            </com.leon.lib.settingview.LSettingItem>
+
+            <!--设置栏目-版本信息-->
+            <com.leon.lib.settingview.LSettingItem
+                android:id="@+id/item_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/item_problem_feedback"
+                leon:isShowUnderLine="false"
+                leon:leftText="版本信息：v1.0"
+                leon:leftTextMarginLeft="40dp"
+                leon:rightStyle="iconHide" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

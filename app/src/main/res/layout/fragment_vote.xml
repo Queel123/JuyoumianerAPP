@@ -1,0 +1,296 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jiayu.jyme.juyoumian_v1.VoteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#3CA89B">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/searchbox" />
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="36dp"
+            android:text="搜索你感兴趣的内容"
+            android:textColor="#817e7e"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:overScrollMode="ifContentScrolls">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="15dp"
+                    android:text="【单选】作为一名正经的吃货，你觉得哪里的糖葫芦最正宗？"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="8dp"
+                    android:text="添加糖浆，为他们打call！"
+                    android:textColor="#646464"
+                    android:textSize="9sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:layout_width="156dp"
+                        android:layout_height="131dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginStart="18dp"
+                        android:src="@drawable/deshengmen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="135dp"
+                        android:textSize="10sp"
+                        android:textColor="#000"
+                        android:text="德胜门" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="248dp"
+                        android:layout_marginTop="135dp"
+                        android:textSize="10sp"
+                        android:textColor="#000"
+                        android:text="大栅栏" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="76dp"
+                        android:layout_marginTop="290dp"
+                        android:textSize="10sp"
+                        android:textColor="#000"
+                        android:text="灵境胡同" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="239dp"
+                        android:layout_marginTop="290dp"
+                        android:textSize="10sp"
+                        android:textColor="#000"
+                        android:text="西四北三条" />
+
+                    <ImageView
+                        android:layout_width="156dp"
+                        android:layout_height="131dp"
+                        android:layout_marginLeft="187dp"
+                        android:src="@drawable/zhalan" />
+
+                    <ImageView
+                        android:layout_width="156dp"
+                        android:layout_height="131dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="154dp"
+                        android:src="@drawable/lingjing" />
+
+                    <ImageView
+                        android:layout_width="156dp"
+                        android:layout_height="131dp"
+                        android:layout_marginLeft="187dp"
+                        android:layout_marginTop="154dp"
+                        android:src="@drawable/xisi" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="298dp"
+                    android:layout_height="88dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/rank" />
+                <View
+                    android:id="@+id/line_vote"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/topLayout"
+                    android:background="#D1D1D1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="22dp"
+                        android:src="@drawable/dian" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="往期结果"
+                        android:textColor="#7A7A7A"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="18dp"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:src="@drawable/dian" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="208dp"
+                        android:src="@drawable/tanghuoshao" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="76dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="全北京最好吃的糖火烧"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="14dp"
+                            android:textColor="#000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="徐记烧饼铺的灯光显得特别的明亮，那是糖火烧的方向。"
+                            android:textSize="11sp"
+                            android:layout_marginTop="38dp"
+                            android:layout_marginLeft="14dp"
+                            android:textColor="#313131"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收藏人数：1.8万"
+                            android:textColor="#7A7A7A"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="56dp"
+                            android:textSize="9sp"/>
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:src="@drawable/share"
+                            android:layout_marginTop="56dp"
+                            android:layout_marginLeft="333dp"/>
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:src="@drawable/love"
+                            android:layout_marginTop="56dp"
+                            android:layout_marginLeft="319dp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="208dp"
+                        android:src="@drawable/taoyiguan" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="76dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="天青色等烟雨，地安门外大街上的陶艺馆在等你"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="14dp"
+                            android:textColor="#000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="景德镇老匠人与你一起，拉坯，上釉，烧制。"
+                            android:textSize="11sp"
+                            android:layout_marginTop="38dp"
+                            android:layout_marginLeft="14dp"
+                            android:textColor="#313131"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收藏人数：1.8万"
+                            android:textColor="#7A7A7A"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="56dp"
+                            android:textSize="9sp"/>
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:src="@drawable/share"
+                            android:layout_marginTop="56dp"
+                            android:layout_marginLeft="333dp"/>
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:src="@drawable/love"
+                            android:layout_marginTop="56dp"
+                            android:layout_marginLeft="319dp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
