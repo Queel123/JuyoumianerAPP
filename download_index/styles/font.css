@@ -1,0 +1,58 @@
+/*导航栏字体*/
+
+@font-face {
+          font-family: Pingfang;
+          src: url('../font/PingFang Regular.eot');
+          src:
+            url('../font/PingFang Regular.eot?#font-spider') format('embedded-opentype'),
+            url('../font/PingFang Regular.woff2') format('woff2'),
+            url('../font/PingFang Regular.woff') format('woff'),
+            url('../font/PingFang Regular.ttf') format('truetype'),
+            url('../font/PingFang Regular.svg') format('svg');
+          font-weight: normal;
+          font-style: normal;
+        }
+@font-face {
+	font-family: Pingfang-medium; /*这里是说明调用来的字体名字*/
+	src: url('PingFang-Medium.ttf'); /*这里是字体文件路径*/
+}
+#header_text1 {
+	font-weight: bold;
+	font-family: Pingfang;
+	font-size: 20px;
+}
+#header_text2 {
+	font-weight: bold;
+	font-family: Pingfang;
+	font-size: 20px;
+}
+#iphone_text1 {
+	font-weight: bold;
+  font-family: Pingfang;
+	font-size: 11px;
+	color: #ffffff;
+}
+#iphone_text2 {
+	font-weight: bold;
+  font-family: Pingfang;
+	font-size: 15px;
+	color: #ffffff;
+}
+#character {
+	font-weight: bold;
+  font-family: Pingfang;
+	font-size: 20px;
+	color: #000000;
+}
+.footText1 {
+	font-weight: bold;
+  font-family: Pingfang;
+	font-size: 20px;
+	color: #ffffff;
+}
+.footText2 {
+	font-weight: bold;
+  font-family: Pingfang;
+	font-size: 16px;
+	color: #ffffff;
+}
